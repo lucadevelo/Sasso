@@ -10,6 +10,11 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.1.1",
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1",
+    "font-awesome": "^4.7.0",
+    "angular-route": "^1.6.1",
+    "angular-bootstrap": "^2.4.0"
   }
 }

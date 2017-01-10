@@ -1,0 +1,124 @@
+
+/* =======  mixins  ========  */
+
+// functions
+@function transparent_color($color, $alpha){
+  @return rgba($color, $alpha);
+}
+
+
+// absolute position
+@mixin absPosition ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+//opacity
+@mixin opacity($opacity) {
+     opacity: $opacity;
+     $opacityIE: $opacity * 100;
+     filter: alpha(opacity=$opacityIE);
+}
+
+//button
+@mixin button($width, $height){
+  font-family: $montserrat-font;
+  display: block;
+  height: $height;
+  width: $width;
+  line-height: $height;
+  text-align: center;
+  text-decoration: none;
+}
+
+@mixin button-submit($width, $height){
+  height: $height;
+  width: $width;
+  border: none;
+  box-shadow: none;
+}
+
+//border radius
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+   -webkit-border-top-right-radius: $radius;
+   border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+   -webkit-border-bottom-right-radius: $radius;
+   border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+   -webkit-border-bottom-right-radius: $radius;
+   border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+    -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-md-15 {
+    width: 20%;
+    float: left;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media only screen and (max-width : 996px) {
+    .col-md-15 {
+        width: 33.3333% !important;
+        margin-bottom: 10px !important;
+        float: left;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .col-md-15 {
+        width: 50% !important;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .col-md-15 {
+        width: 100% !important;
+    }
+}
+

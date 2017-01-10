@@ -1,0 +1,33 @@
+{
+  "name": "sasso",
+  "version": "1.0.0",
+  "description": "sass gulp workflow",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucadevelo/Sasso.git"
+  },
+  "author": "lucadevelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucadevelo/Sasso/issues"
+  },
+  "homepage": "https://github.com/lucadevelo/Sasso#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header": "^1.8.8",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.3.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4"
+  }
+}

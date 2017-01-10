@@ -1,0 +1,14 @@
+{
+  "name": "sasso",
+  "description": "sass gulp workflow",
+  "main": "server.js",
+  "authors": [
+    "lucadevelo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lucadevelo/Sasso",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

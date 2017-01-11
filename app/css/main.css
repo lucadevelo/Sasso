@@ -1,0 +1,48 @@
+body {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  background: white;
+  color: black; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+dl {
+  padding: 0.5em;
+  color: black;
+  margin: auto;
+  max-width: 500px; }
+
+dt {
+  background: #ddd;
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid white; }
+
+dt:first-child {
+  border-top: none; }
+
+dt:nth-last-child(2) {
+  border-bottom: none; }
+
+dd {
+  padding: 1em;
+  padding-bottom: 1.5em; }
+
+.loader {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999; }
+  .loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -35px; }

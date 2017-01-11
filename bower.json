@@ -9,12 +9,13 @@
   "homepage": "https://github.com/lucadevelo/Sasso",
   "private": true,
   "dependencies": {
-    "jquery": "^3.1.1",
     "bootstrap-sass": "^3.3.7",
     "bootstrap": "^3.3.7",
     "angular": "^1.6.1",
     "font-awesome": "^4.7.0",
     "angular-route": "^1.6.1",
-    "angular-bootstrap": "^2.4.0"
+    "angular-bootstrap": "^2.4.0",
+    "jquery": "1.12.4",
+    "jquery-ui": "^1.12.1"
   }
 }

@@ -1,13 +1,14 @@
-(function ($, window, document, undefined) {
+(function($, window, document, undefined) {
+    'use strict';
+    $(window).load(function() {
+        $('.loader').delay(100).fadeOut('slow');
+    });
 
-  'use strict';
-
-  $(window).load(function() {
-    $(".loader").delay(800).fadeOut("slow");
-  })
-  
-  $(function () {
-
-  });
-
+    $(function() {
+        $('div.mylist dd').filter(':nth-child(n+4)').hide();
+        $('div.mylist dl').on('mouseenter', 'dt', function() {
+            $(this).next().slideDown(200)
+                .siblings('dd').slideUp(200);
+        });
+    });
 })(jQuery, window, document);
